@@ -8,5 +8,6 @@ require_once("config.php");
 // echo '</pre>';
 $user = new Utilizador();
 $user->loadById(3);
-echo $user
+echo $user;
+echo json_encode($user->getList());
  ?>

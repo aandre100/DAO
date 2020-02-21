@@ -56,6 +56,11 @@ class Utilizador {
 		));
 	}
 
+	public function getList(){
+		$sql = new Sql();
+		return $sql->select("SELECT * FROM tb_utilizadores ORDER BY deslogin");
+	}
+
 }
 
  ?>

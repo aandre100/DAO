@@ -1,6 +1,6 @@
 <?php
 
-require_once('/var/www/html/curso-php7/pass.php');
+require_once('../pass.php');
 
 class Sql extends PDO {
 	private $conn;
