@@ -6,8 +6,17 @@ require_once("config.php");
 // echo '<pre>';
 // var_dump($result);
 // echo '</pre>';
-$user = new Utilizador();
-$user->loadById(3);
-echo $user;
-echo json_encode($user->getList());
+// $user = new Utilizador();
+// $user->loadById(3);
+// echo $user;
+// echo json_encode($user->getList());
+// $lista = Utilizador::search('andre');
+//
+// echo json_encode($lista);
+
+$usera = new Utilizador();
+$usera->login("pato","1234532");
+echo "<br>";
+echo $usera;
+
  ?>
