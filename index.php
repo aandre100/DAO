@@ -14,9 +14,25 @@ require_once("config.php");
 //
 // echo json_encode($lista);
 
-$usera = new Utilizador();
-$usera->login("pato","1234532");
-echo "<br>";
-echo $usera;
+// $usera = new Utilizador();
+// $usera->login("pato","1234532");
+// echo "<br>";
+// echo $usera;
+
+// $aluno = new Utilizador();
+//
+//
+// $aluno->insert();
+// echo $aluno;
+
+
+$utilizador = new Utilizador();
+
+$utilizador->loadById(6);
+
+echo $utilizador;
+$utilizador->update("teste id 6", "password do 6");
+echo $utilizador;
+
 
  ?>
